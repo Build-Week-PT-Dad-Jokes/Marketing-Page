@@ -1,0 +1,214 @@
+/**
+ * Global Reset of all HTML Elements
+ *
+ * Resetting all of our HTML Elements ensures a smoother
+ * visual transition between browsers. If you don't believe me,
+ * try temporarily commenting out this block of code, then go
+ * and look at Mozilla versus Safari, both good browsers with
+ * a good implementation of CSS. The thing is, all browser CSS
+ * defaults are different and at the end of the day if visual
+ * consistency is what we're shooting for, then we need to
+ * make sure we're resetting all spacing elements.
+ *
+ */
+html,
+body {
+  border: 0;
+  font-family: "Helvetica-Neue", "Helvetica", Arial, sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+div,
+span,
+object,
+iframe,
+img,
+table,
+caption,
+thead,
+tbody,
+tfoot,
+tr,
+tr,
+td,
+article,
+aside,
+canvas,
+details,
+figure,
+hgroup,
+menu,
+nav,
+footer,
+header,
+section,
+summary,
+mark,
+audio,
+video {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+address,
+cit,
+code,
+del,
+dfn,
+em,
+ins,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+b,
+i,
+hr,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+legend,
+label {
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+}
+article,
+aside,
+canvas,
+figure,
+figure img,
+figcaption,
+hgroup,
+footer,
+header,
+nav,
+section,
+audio,
+video {
+  display: block;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+table caption,
+table th,
+table td {
+  text-align: left;
+  vertical-align: middle;
+}
+a img {
+  border: 0;
+}
+:focus {
+  outline: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+h1 {
+  font-size: 4.8rem;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+p {
+  line-height: 1.5;
+  font-size: 1.6rem;
+}
+a {
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+h1,
+h2,
+h3,
+p,
+a,
+button {
+  font-family: 'Roboto', monospace;
+}
+.landing {
+  border: 2px solid purple;
+  height: 100vh;
+  min-height: 600px;
+  display: flex;
+  flex-wrap: no-wrap;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.landing header {
+  width: 100%;
+  display: flex;
+  flex-wrap: no-wrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+  background: #ff3939;
+  border-bottom: 3px solid #ff9e44;
+}
+.landing header img {
+  width: 100px;
+  height: 75px;
+}
+.landing header h1 {
+  color: #ff9e44;
+}
+.landing header nav {
+  width: 40%;
+  display: flex;
+  flex-wrap: no-wrap;
+  justify-content: space-evenly;
+}
+.landing header nav a {
+  color: #555;
+  font-size: 1.8rem;
+}
+.landing header nav a:hover {
+  color: #ff9e44;
+}
+.landing header nav a:active {
+  color: #ff3939;
+}
+.landing footer {
+  width: 100%;
+  display: flex;
+  flex-wrap: no-wrap;
+  justify-content: flex-end;
+  height: 40px;
+}
+.landing footer a {
+  margin: 0 20px;
+}
+.top img {
+  width: 50px;
+}
