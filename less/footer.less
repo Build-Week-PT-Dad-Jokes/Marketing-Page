@@ -1,11 +1,29 @@
 .landing {
     footer {
         width: 100%;
-        .flex(no-wrap, flex-end);
+        .flex(no-wrap, space-between);
+        align-items: center;
         height: 40px;
+        border-top: 3px solid fadeout(@accent, 20%);
+        background: white;
+
+        p {
+            font-size: 1.2rem;
+            margin: 10px 30px;
+        }
 
         a {
-            margin: 0 20px;
+            margin: 10px 30px;
+            color: @accent;
+            height: 30px;
+
+            &:hover {
+                color: @primary;
+            }
+
+            &:active {
+                color: white;
+            }
         }
     }
 }

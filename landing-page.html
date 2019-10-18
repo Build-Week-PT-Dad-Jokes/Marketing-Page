@@ -7,37 +7,54 @@
         <title>Dad Jokes</title>
 
         <link href='css/index.css' rel='stylesheet'>
+        <script src='landing.js'></script>
     </head>
 
     <body>
         <div class='container landing'>
             <header>
-                <img src='img/Dad-Joke-Logo.png' alt='Dad Joke logo.'>
+                <a href='#'>
+                    <img src='img/Dad-Joke-Logo.png' alt='Dad Joke logo.'>
+                </a>    
                 <h1>Dad Jokes</h1>
                 <nav>
                     <a href='#'>Home</a>
-                    <a href='#'>Browse</a>
-                    <a href='#'>Random Joke</a>
-                    <a href='#'>Login</a>
+                    <a href='#'>About</a>
+                    <a href='#'>Testimonials</a>
+                    <a href='#'>Contact</a>
                 </nav>
             </header>
 
             <div class='top'>
                 <img src='img/Question-Mark.png' alt='Question mark'>
                 <div id='carousel'>
+                    <button type='button' class='left' onclick="plusDivs (-1)">&#10094;</button>
                     <!-- Fill in carousel stuff here -->
+                    <img class='slideShow' src='img/Dad-and-kid.png' alt="A dad and kid laugh as kid sits on dad's shoulders.">
+                    <img class='slideShow' src='img/Laughing-wall.png' alt='A man laughs by wall.'>
+                    <img class='slideShow' src='img/Laughing-suit.png' alt='A man laughs in a suit.'>
+                    <button type='button' class='slideShow'>Sign up now!</button>
+                    <button type='button' class='right' onclick='plusDivs (+1)'>&#10095;</button>
                 </div>
             </div>
 
             <div class='mid'>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, impedit nisi perferendis nam vel quidem in fugiat aperiam a sed quas dolorum? Fugit sit laboriosam exercitationem blanditiis ab, dignissimos ex!</p>
-                <button type='button'>Create an Account</button>
-                <p>Already have an account? <a href='#'>Login</a></p>
-                <button type='button'>Continue as Guest</button>
+                <p>You're a funny guy, but you keep losing your list of jokes and forgetting which ones had the best reactions...<br><span id='worry'>Well worry no more!</span><br> Dad<span id='bad'>(or bad??)</span>Jokes app to the rescue!</p>
+                <button type='button'><span class='button-span'>Create an Account </span></button>
+                <div class='already'>
+                    <p>Already have an account? <a href='#'>Login</a></p>
+                    <button type='button'><span class='button-span'>Continue as Guest </span></button>
+                </div>
             </div>
 
             <footer>
-                <a href='#'>Contact Us</a>
+                <p>Dad Jokes - Copyright 2019</p>
+                <nav>
+                    <a href='#'>Home</a>
+                    <a href='#'>About</a>
+                    <a href='#'>Testimonials</a>
+                    <a href='#'>Contact</a>
+                </nav>
             </footer>
         </div>
     </body>
