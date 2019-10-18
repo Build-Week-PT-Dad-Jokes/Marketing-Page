@@ -1,5 +1,11 @@
-.flex(@wrap, @justify){
+.flex(@wrap, @justify) {
     display: flex;
     flex-wrap: @wrap;
     justify-content: @justify;
+}
+
+.display-flex(@wrap, @justify) {
+    display: flex;
+    flex-flow: row-wrap;
+    justify-content: space-evenly;
 }
