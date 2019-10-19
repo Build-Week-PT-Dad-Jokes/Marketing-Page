@@ -173,7 +173,7 @@ button {
   justify-content: space-around;
   align-items: center;
   height: 80px;
-  background: linear-gradient(#ff3939);
+  background: linear-gradient(#ff3939, rgba(0, 0, 0, 0));
   position: fixed;
 }
 .landing header img {
@@ -359,7 +359,7 @@ h1 {
   margin: 4%;
 }
 img {
-  display: flex; width: 65%;
+  display: flex width: 65%;
 }
 h1 {
   font-size: 2.5rem;
