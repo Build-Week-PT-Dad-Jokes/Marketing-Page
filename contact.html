@@ -28,49 +28,51 @@
 
    <!--contact form-->
    <div class="contact-container">
-      <form action="/action_page.php">
-         <h2><a name="contactus">
-               Submitting a Joke?</h2></a>
-         <div class="row">
-            <div class="col-25">
-               <label for="fname">Full Name:</label>
+      <div>
+         <form action="/action_page.php">
+            <h2><a name="contactus">
+                  Want to Add a Joke?</h2></a>
+            <div class="row">
+               <div class="col-25">
+                  <label for="fname">Name:</label>
+               </div>
+               <div class="col-75">
+                  <input type="text" id="fname" name="firstname" placeholder="Your full name here">
+               </div>
             </div>
-            <div class="col-75">
-               <input type="text" id="fname" name="firstname" placeholder="Your full name here">
+            <div class="row">
+               <div class="col-25">
+                  <label for="email">Email:</label>
+               </div>
+               <div class="col-75">
+                  <input type="text" id="lname" name="lastname" placeholder="Your email here">
+               </div>
             </div>
-         </div>
-         <div class="row">
-            <div class="col-25">
-               <label for="email">Email:</label>
+            <div class="row">
+               <div class="col-25">
+                  <label for="Vacation-Packages">Some message here:</label>
+               </div>
+               <div class="col-75">
+                  <select id="country" name="country">
+                     <option value="Option 1">Option 1</option>
+                     <option value="Option 2">Option 2</option>
+                     <option value="Option 3">Option 3</option>
+                  </select>
+               </div>
             </div>
-            <div class="col-75">
-               <input type="text" id="lname" name="lastname" placeholder="Your email here">
+            <div class="row">
+               <div class="col-25">
+                  <label for="subject">Input The Joke Here:</label>
+               </div>
+               <div class="col-75">
+                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+               </div>
             </div>
-         </div>
-         <div class="row">
-            <div class="col-25">
-               <label for="Vacation-Packages">Some message here:</label>
+            <div class="row">
+               <input type="submit" value="Submit">
             </div>
-            <div class="col-75">
-               <select id="country" name="country">
-                  <option value="Bahamas">Option 1</option>
-                  <option value="Belize">Option 2</option>
-                  <option value="Chile">Option 3</option>
-               </select>
-            </div>
-         </div>
-         <div class="row">
-            <div class="col-25">
-               <label for="subject">Special Instructions</label>
-            </div>
-            <div class="col-75">
-               <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-            </div>
-         </div>
-         <div class="row">
-            <input type="submit" value="Submit">
-         </div>
-      </form>
+         </form>
+      </div>
    </div>
    </div>
    </div>
