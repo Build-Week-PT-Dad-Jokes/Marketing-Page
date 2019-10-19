@@ -171,8 +171,8 @@ button {
   justify-content: space-around;
   align-items: center;
   height: 80px;
-  background: #ff3939;
-  border-bottom: 3px solid rgba(255, 158, 68, 0.8);
+  background: linear-gradient(#ff3939);
+  position: fixed;
 }
 .landing header img {
   width: 100px;
@@ -202,17 +202,16 @@ button {
   display: flex;
   flex-wrap: no-wrap;
   justify-content: space-between;
-  align-items: center;
-  height: 40px;
-  border-top: 3px solid rgba(255, 158, 68, 0.8);
-  background: white;
+  align-items: flex-end;
+  height: 60px;
+  background: linear-gradient(rgba(85, 85, 85, 0), #555555);
 }
 .landing footer p {
   font-size: 1.2rem;
-  margin: 10px 30px;
+  margin: 15px 30px;
 }
 .landing footer a {
-  margin: 10px 30px;
+  margin: 15px 30px;
   color: #ff9e44;
   height: 30px;
 }
@@ -223,7 +222,7 @@ button {
   color: white;
 }
 .landing {
-  background: #ffe6e6;
+  background-image: radial-gradient(circle, rgba(114, 22, 22, 0), #721616), url();
 }
 .landing .top {
   width: 90%;
@@ -231,14 +230,25 @@ button {
   flex-wrap: wrap;
   justify-content: flex-start;
   height: 100vh;
+  margin-top: 80px;
 }
-.landing .top img {
+.landing .top #question {
   width: 50px;
   height: 50px;
   margin: 5px;
 }
 .landing .top #carousel {
   width: 100%;
+}
+.landing .top #carousel .slideShow {
+  width: 90%;
+  height: 100px;
+  background: white;
+  border: 1px solid black;
+  display: none;
+}
+.landing .top #carousel .slideShow #firstSlideShow {
+  display: block;
 }
 .landing .mid {
   width: 90%;

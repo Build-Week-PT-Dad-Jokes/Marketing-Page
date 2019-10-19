@@ -1,12 +1,13 @@
 .landing {
-    background: lighten(@primary, 34%);
+    background-image: radial-gradient(circle, rgba(114, 22, 22, 0), rgba(114, 22, 22, 1)), url();
         
     .top {
         width: 90%;
         .flex(wrap, flex-start);
         height: 100vh;
+        margin-top: 80px;
 
-        img{
+        #question{
             width: 50px;
             height: 50px;
             margin: 5px;
@@ -14,6 +15,18 @@
 
         #carousel {
             width: 100%;
+
+            .slideShow{
+                width: 90%;
+                height: 100px;
+                background: white;
+                border: 1px solid black;
+                display: none;
+
+                #firstSlideShow{
+                    display: block;
+                }
+            }
         }
     }
 

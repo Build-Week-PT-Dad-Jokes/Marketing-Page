@@ -8,6 +8,7 @@
 
         <link href='css/index.css' rel='stylesheet'>
         <script src='landing.js'></script>
+        <!-- <style>.slideShow {display: none}</style> -->
     </head>
 
     <body>
@@ -26,15 +27,18 @@
             </header>
 
             <div class='top'>
-                <img src='img/Question-Mark.png' alt='Question mark'>
+                <img id='question' src='img/Question-Mark.png' alt='Question mark'>
                 <div id='carousel'>
-                    <button type='button' class='left' onclick="plusDivs (-1)">&#10094;</button>
+                    <button type='button' class='left' onclick="plusDivs(-1)">&#10094;</button>
                     <!-- Fill in carousel stuff here -->
-                    <img class='slideShow' src='img/Dad-and-kid.png' alt="A dad and kid laugh as kid sits on dad's shoulders.">
+                    <!-- <img class='slideShow' src='img/Dad-and-kid.png' alt="A dad and kid laugh as kid sits on dad's shoulders.">
                     <img class='slideShow' src='img/Laughing-wall.png' alt='A man laughs by wall.'>
-                    <img class='slideShow' src='img/Laughing-suit.png' alt='A man laughs in a suit.'>
+                    <img class='slideShow' src='img/Laughing-suit.png' alt='A man laughs in a suit.'> -->
+                    <p class='slideShow' id='firstSlideShow'>Dad joke 1</p>
+                    <p class='slideShow'>Dad joke 2</p>
+                    <p class='slideShow'>Dad joke 3</p>
                     <button type='button' class='slideShow'>Sign up now!</button>
-                    <button type='button' class='right' onclick='plusDivs (+1)'>&#10095;</button>
+                    <button type='button' class='right' onclick='plusDivs(+1)'>&#10095;</button>
                 </div>
             </div>
 
