@@ -12,3 +12,5 @@ KJ-Schneider
 -I've also added a "landing" class into the same "container" div that way I can use the specificity to refer just to the landing page, as to not affect the about page.
 
 -I only have 1 id, the "carousel" id.
+
+Jason Cruz
