@@ -129,6 +129,7 @@ a img {
 }
 html {
   font-size: 62.5%;
+  margin: 0 auto;
 }
 h1 {
   font-size: 5rem;
@@ -166,6 +167,7 @@ button {
 }
 .landing header {
   width: 100%;
+  margin: 0 auto;
   display: flex;
   flex-wrap: no-wrap;
   justify-content: space-around;
@@ -327,4 +329,132 @@ button {
 }
 .landing .mid .already button:hover span {
   padding-right: 10px;
+}
+.main-content {
+  margin: auto 10%;
+}
+.main-content .main-content p {
+  text-align: center;
+}
+.main-content .meet {
+  align-content: center;
+}
+.ui-box {
+  display: flex;
+  flex-flow: row wrap;
+  width: auto;
+}
+.content-box {
+  justify-content: space-evenly;
+  height: auto;
+  background: #ff9e44;
+  border: 5px solid black;
+}
+.title-names,
+h1 {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
+  align-content: center;
+  margin: 4%;
+}
+img {
+  display: flex; width: 65%;
+}
+h1 {
+  font-size: 2.5rem;
+}
+.button {
+  display: flex;
+  margin-top: 3%;
+  padding: 10px 10px;
+  border-radius: 4px;
+  background-color: #ff3939;
+  border: none;
+  text-decoration: none;
+  color: #ff9e44;
+  font-size: 20px;
+}
+.button a {
+  text-align: center;
+}
+.contact-container {
+  display: flex;
+  flex-flow: row;
+  align-content: center;
+  width: 38%;
+  margin-top: 5%;
+  margin-left: 30%;
+}
+.inside-contact {
+  display: flex;
+  align-content: center;
+}
+.contact-container h2 {
+  display: flex;
+  justify-content: center;
+}
+input[type=text],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid black;
+  border-radius: 4px;
+  resize: vertical;
+}
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+input[type=submit] {
+  background-color: #ff3939;
+  color: white;
+  margin-top: 4%;
+  padding: 12px 20px;
+  border: 1px solid black;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+input[type=submit]:hover {
+  background-color: white;
+  color: #ff3939;
+}
+.contact-container {
+  border-radius: 5px;
+  background-color: #ff9e44;
+  padding: 20px;
+}
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+  font-size: 2rem;
+}
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 1200px) {
+  .contact-container {
+    display: flex;
+    flex-flow: row;
+    align-content: center;
+    width: 85%;
+    margin-top: 5%;
+    margin-left: 7.5%;
+  }
+  .col-25,
+  .col-75,
+  input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
 }

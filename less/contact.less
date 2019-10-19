@@ -1,0 +1,96 @@
+.contact-container {
+   display: flex;
+   flex-flow: row;
+   align-content: center;
+   width: 38%;
+   margin-top: 5%;
+   margin-left: 30%;
+
+}
+
+.inside-contact {
+   display: flex;
+   align-content: center;
+}
+
+.contact-container h2 {
+   display: flex;
+   justify-content: center;
+}
+
+input[type=text],
+select,
+textarea {
+   width: 100%;
+   padding: 12px;
+   border: 1px solid black;
+   border-radius: 4px;
+   resize: vertical;
+}
+
+label {
+   padding: 12px 12px 12px 0;
+   display: inline-block;
+}
+
+input[type=submit] {
+   background-color: @primary;
+   color: white;
+   margin-top: 4%;
+   padding: 12px 20px;
+   border: 1px solid black;
+   border-radius: 4px;
+   cursor: pointer;
+   float: right;
+}
+
+input[type=submit]:hover {
+   background-color: white;
+   color: @primary;
+}
+
+.contact-container {
+   border-radius: 5px;
+   background-color: @accent;
+   padding: 20px;
+}
+
+.col-25 {
+   float: left;
+   width: 25%;
+   margin-top: 6px;
+   font-size: 2rem;
+}
+
+.col-75 {
+   float: left;
+   width: 75%;
+   margin-top: 6px;
+}
+
+.row:after {
+   content: "";
+   display: table;
+   clear: both;
+}
+
+@media screen and (max-width: 1200px) {
+
+   .contact-container {
+      display: flex;
+      flex-flow: row;
+      align-content: center;
+      width: 85%;
+      margin-top: 5%;
+      margin-left: 7.5%;
+
+   }
+
+
+   .col-25,
+   .col-75,
+   input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+   }
+}
