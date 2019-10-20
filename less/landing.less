@@ -1,10 +1,18 @@
 .landing {
-    background-image: radial-gradient(circle, rgba(114, 22, 22, 0), rgba(114, 22, 22, 1)), url();
-        
+    background-image: radial-gradient(circle, rgba(114, 22, 22, 0), rgba(114, 22, 22, .7), rgba(114, 22, 22, 1));
+
+    
+    .bg-img {
+        position: fixed;
+        opacity: .5;
+        z-index: -9999;
+        margin-bottom: 100px;
+    }
+
     .top {
         width: 90%;
         .flex(wrap, flex-start);
-        height: 100vh;
+        height: 200px;
         margin-top: 80px;
 
         #question{
@@ -23,27 +31,40 @@
         }
 
         #carousel {
-            margin-top: 60px;
+            margin: 50px;
             width: 100%;
             text-align: center;
+            text-shadow: 5px 5px 10px black;
+            border-bottom: 1px solid rgba(0, 0, 0, .5);
+            border-top: 1px solid rgba(0, 0, 0, .5);
+            
+            p {
+                font-size: 4rem;
 
-            .slideShow{
-                width: 90%;
-                height: 100px;
-                background: white;
-                border: 1px solid black;
-                display: none;
-
-                #firstSlideShow{
-                    display: block;
+                #up {
+                    color: @accent;
+                    font-size: 4.5rem;
                 }
             }
+
+            // .slideShow{
+            //     width: 90%;
+            //     height: 100px;
+            //     background: white;
+            //     border: 1px solid black;
+            //     display: none;
+
+            //     #firstSlideShow{
+            //         display: block;
+            //     }
+            // }
         }
     }
 
     .mid {
         width: 90%;
         .flex(wrap, center);
+        text-shadow: 2px 2px 5px black;
 
         p {
             text-align: center;
@@ -79,6 +100,7 @@
             color: white;
             border: none;
             border-radius: 10px;
+            box-shadow: -4px 4px rgba(0, 0, 0, .5);
 
             span {
                 position: relative;
@@ -97,6 +119,11 @@
 
             &:hover span:after {
                 opacity: 1;
+            }
+
+            &:active {
+                transform: translate(-2px, 2px);
+                box-shadow: -2px 2px rgba(0, 0, 0, .8);
             }
         }
 

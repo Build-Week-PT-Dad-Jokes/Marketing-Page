@@ -183,6 +183,7 @@ button {
 }
 .landing header h1 {
   color: #ff9e44;
+  font-size: 5rem;
 }
 .landing header nav {
   width: 40%;
@@ -225,14 +226,20 @@ button {
   color: white;
 }
 .landing {
-  background-image: radial-gradient(circle, rgba(114, 22, 22, 0), #721616), url();
+  background-image: radial-gradient(circle, rgba(114, 22, 22, 0), rgba(114, 22, 22, 0.7), #721616);
+}
+.landing .bg-img {
+  position: fixed;
+  opacity: 0.5;
+  z-index: -9999;
+  margin-bottom: 100px;
 }
 .landing .top {
   width: 90%;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  height: 100vh;
+  height: 200px;
   margin-top: 80px;
 }
 .landing .top #question {
@@ -249,25 +256,26 @@ button {
   transition: 0.2s;
 }
 .landing .top #carousel {
-  margin-top: 60px;
+  margin: 50px;
   width: 100%;
   text-align: center;
+  text-shadow: 5px 5px 10px black;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  border-top: 1px solid rgba(0, 0, 0, 0.5);
 }
-.landing .top #carousel .slideShow {
-  width: 90%;
-  height: 100px;
-  background: white;
-  border: 1px solid black;
-  display: none;
+.landing .top #carousel p {
+  font-size: 4rem;
 }
-.landing .top #carousel .slideShow #firstSlideShow {
-  display: block;
+.landing .top #carousel p #up {
+  color: #ff9e44;
+  font-size: 4.5rem;
 }
 .landing .mid {
   width: 90%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  text-shadow: 2px 2px 5px black;
 }
 .landing .mid p {
   text-align: center;
@@ -299,6 +307,7 @@ button {
   color: white;
   border: none;
   border-radius: 10px;
+  box-shadow: -4px 4px rgba(0, 0, 0, 0.5);
 }
 .landing .mid button span {
   position: relative;
@@ -314,6 +323,10 @@ button {
 }
 .landing .mid button:hover span:after {
   opacity: 1;
+}
+.landing .mid button:active {
+  transform: translate(-2px, 2px);
+  box-shadow: -2px 2px rgba(0, 0, 0, 0.8);
 }
 .landing .mid .already {
   width: 100%;
@@ -468,4 +481,95 @@ input[type=submit]:hover {
     width: 100%;
     margin-top: 0;
   }
+}
+.testimonials {
+  width: 100%;
+}
+.testimonials .opening {
+  margin-top: 100px;
+  text-align: center;
+  width: 80%;
+  text-shadow: 2px 2px 5px black;
+}
+.testimonials .opening p {
+  line-height: 2;
+}
+.testimonials .opening p .accent {
+  color: #ff9e44;
+}
+.testimonials .opening p .small {
+  font-size: 1.4rem;
+}
+.testimonials .opening p .big {
+  font-size: 2.5rem;
+}
+.testimonials #dad-container {
+  width: 100%;
+  margin: 50px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+.testimonials #dad-container .dad {
+  width: 18%;
+  height: 400px;
+  background: linear-gradient(rgba(255, 158, 68, 0.5), #ff9e44, #ff9e44, rgba(255, 158, 68, 0.5));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.testimonials #dad-container .dad h2 {
+  color: primary;
+  font-size: 1.8rem;
+  text-align: center;
+  width: 100%;
+}
+.testimonials #dad-container .dad img {
+  width: 60%;
+  height: 200px;
+}
+.testimonials #dad-container .dad .hover-reveal {
+  display: none;
+}
+.testimonials #dad-container .dad .hover-reveal p {
+  padding: 20px;
+}
+.testimonials #dad-container .dad:hover {
+  width: 35%;
+  background: #ffab5e;
+}
+.testimonials #dad-container .dad:hover .hover-reveal {
+  display: block;
+  transition: 1s;
+}
+.testimonials .signup {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.testimonials .signup .signup-half {
+  margin: 25px;
+  text-shadow: 2px 2px 5px black;
+}
+.testimonials .signup .signup-half p {
+  font-size: 3rem;
+}
+.testimonials .signup .signup-half button {
+  height: 2.5rem;
+  background: #ff9e44;
+  border-radius: 5px;
+  border: none;
+  width: 50px;
+  font-size: 2rem;
+  box-shadow: -3px 3px rgba(0, 0, 0, 0.5);
+}
+.testimonials .signup .signup-half button:hover {
+  background: #ffab5e;
+}
+.testimonials .signup .signup-half button:active {
+  background: #ff9e44;
+  color: #ff9e44;
+  transform: translate(-2px, 2px);
+  box-shadow: -1px 1px rgba(0, 0, 0, 0.8);
 }
