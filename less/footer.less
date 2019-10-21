@@ -1,11 +1,28 @@
-// .landing {
-//     footer {
-//         width: 100%;
-//         .flex(no-wrap, flex-end);
-//         height: 40px;
+.landing {
+   footer {
+      width: 100%;
+      .flex(no-wrap, space-between);
+      align-items: flex-end;
+      height: 60px;
+      background: linear-gradient(rgba(85, 85, 85, 0), rgba(85, 85, 85, 1));
 
-//         a {
-//             margin: 0 20px;
-//         }
-//     }
-// }
+      p {
+         font-size: 1.2rem;
+         margin: 15px 30px;
+      }
+
+      a {
+         margin: 15px 30px;
+         color: @accent;
+         height: 30px;
+
+         &:hover {
+            color: @primary;
+         }
+
+         &:active {
+            color: white;
+         }
+      }
+   }
+}
