@@ -1,5 +1,161 @@
-.top {
-    img{
-        width: 50px;
+.landing {
+    background-image: radial-gradient(circle, rgba(114, 22, 22, 0), rgba(114, 22, 22, .7), rgba(114, 22, 22, 1));
+
+    
+    .bg-img {
+        position: fixed;
+        opacity: .5;
+        z-index: -9999;
+        margin-bottom: 100px;
+    }
+
+    .top {
+        width: 90%;
+        .flex(wrap, flex-start);
+        height: 200px;
+        margin-top: 80px;
+
+        #question{
+            width: 50px;
+            height: 50px;
+            margin: 5px;
+            opacity: .6;
+            position: absolute;
+
+            &:hover {
+                opacity: 1;
+                width: 52px;
+                height: 52px;
+                transition: .2s;
+            }
+        }
+
+        #carousel {
+            margin: 50px;
+            width: 100%;
+            text-align: center;
+            text-shadow: 5px 5px 10px black;
+            border-bottom: 1px solid rgba(0, 0, 0, .5);
+            border-top: 1px solid rgba(0, 0, 0, .5);
+            
+            p {
+                font-size: 4rem;
+
+                #up {
+                    color: @accent;
+                    font-size: 4.5rem;
+                }
+            }
+
+            // .slideShow{
+            //     width: 90%;
+            //     height: 100px;
+            //     background: white;
+            //     border: 1px solid black;
+            //     display: none;
+
+            //     #firstSlideShow{
+            //         display: block;
+            //     }
+            // }
+        }
+    }
+
+    .mid {
+        width: 90%;
+        .flex(wrap, center);
+        text-shadow: 2px 2px 5px black;
+
+        p {
+            text-align: center;
+            width: 100%;
+            font-size: 1.8rem;
+
+            #worry{
+                font-size: 4rem;
+                color: @primary;
+                margin-top: 40px;
+                display: block;
+                font-weight: 700;
+            }
+
+            #bad {
+                font-size: 1.2rem;
+                color: @accent;
+                line-height: 2.5;
+            }
+
+            .already {
+                font-size: 1.2rem;
+            }
+        }
+
+        button {
+            width: 400px;
+            min-width: 100px;
+            height: 50px;
+            margin: 20px 0px;
+            font-size: 1.8rem;
+            background: @accent;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            box-shadow: -4px 4px rgba(0, 0, 0, .5);
+
+            span {
+                position: relative;
+                transition: .5s;
+
+                &:after {
+                    content: '\25B7';
+                    position: absolute;
+                    opacity: 0;
+                }
+            }
+
+            &:hover span{
+                padding-right: 20px;
+            }
+
+            &:hover span:after {
+                opacity: 1;
+            }
+
+            &:active {
+                transform: translate(-2px, 2px);
+                box-shadow: -2px 2px rgba(0, 0, 0, .8);
+            }
+        }
+
+        .already {
+            width: 100%;
+            .flex(wrap, center);
+            margin-top: 30px;
+            
+            p, a {
+                font-size: 1.4rem;
+            }
+
+            a {
+                color: @accent;
+
+                &:hover {
+                    color: @primary;
+                }
+
+                &:active {
+                    color: white;
+                }
+            }
+
+            button {
+                width: 300px;
+
+                &:hover span{
+                    padding-right: 10px;
+                }
+            }
+        }
+
     }
 }

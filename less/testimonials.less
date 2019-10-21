@@ -1,0 +1,105 @@
+.testimonials {
+    width: 100%;
+    
+    .opening {
+        margin-top: 100px;
+        text-align: center;
+        width: 80%;
+        text-shadow: 2px 2px 5px black;
+
+        p {
+            line-height: 2;
+
+            .accent {
+                color: @accent;
+            }
+
+            .small {
+                font-size: 1.4rem;
+            }
+
+            .big {
+                font-size: 2.5rem;
+            }
+        }
+    }
+
+    #dad-container{
+        width: 100%;
+        margin: 50px;
+        .flex(nowrap, space-around);
+
+        .dad {
+            width: 18%;
+            height: 400px;
+            background: linear-gradient(rgba(255, 158, 68, .5), @accent, @accent, rgba(255, 158, 68, .5));
+            .flex(wrap, center);
+            
+
+            h2 {
+                color: primary;
+                font-size: 1.8rem;
+                text-align: center;
+                width: 100%;
+            }
+
+            img {
+                width: 60%;
+                height: 200px;
+            }
+
+            .hover-reveal {
+                display: none;
+
+                p {
+                    padding: 20px;
+                }
+            }
+
+            &:hover {
+                width: 35%;
+                background: lighten(@accent, 5%);
+
+                .hover-reveal {
+                    display: block;
+                    transition: 1s;
+                }
+            }
+        }
+    }
+
+    .signup {
+        .flex(nowrap, space-evenly);
+        align-items: center;
+
+        .signup-half {
+            margin: 25px;
+            text-shadow: 2px 2px 5px black;
+
+            p {
+                font-size: 3rem;
+            }
+
+            button {
+                height: 2.5rem;
+                background: @accent;
+                border-radius: 5px;
+                border: none;
+                width: 50px;
+                font-size: 2rem;
+                box-shadow: -3px 3px rgba(0, 0, 0, .5);
+
+                &:hover {
+                    background: lighten(@accent, 5%);
+                }
+
+                &:active {
+                    background: @accent;
+                    color: @accent;
+                    transform: translate(-2px, 2px);
+                    box-shadow: -1px 1px rgba(0, 0, 0, .8);
+                }
+            }
+        }
+    }
+}

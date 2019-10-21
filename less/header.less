@@ -6,8 +6,9 @@
         .flex(no-wrap, space-around);
         align-items: center;
         height: 80px;
-        background: @primary;
-        border-bottom: 3px solid @accent;
+        background: linear-gradient(@primary, rgba(257, 57, 57, .9), rgba(257, 57, 57, 0));
+        position: fixed;
+        z-index: 9999;
 
         img {
             width: 100px;
@@ -16,6 +17,7 @@
 
         h1 {
             color: @accent;
+            font-size: 5rem;
         }
 
         nav {
