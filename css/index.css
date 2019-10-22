@@ -156,7 +156,7 @@ h3,
 p,
 a,
 button {
-  font-family: 'Roboto', monospace;
+  font-family: 'Roboto', sans-serif;
 }
 .landing {
   display: flex;
@@ -240,9 +240,10 @@ button {
 .landing header nav a:hover {
   color: #ff9e44;
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .landing header nav a:hover {
     color: #555;
+    background: rgba(255, 255, 255, 0.3);
   }
 }
 .landing header nav a:active {
