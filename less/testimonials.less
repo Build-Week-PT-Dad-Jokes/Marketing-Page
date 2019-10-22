@@ -5,7 +5,6 @@
         margin-top: 100px;
         text-align: center;
         width: 80%;
-        text-shadow: 2px 2px 5px black;
 
         p {
             line-height: 2;
@@ -29,11 +28,24 @@
         margin: 50px;
         .flex(nowrap, space-around);
 
+        @media @tablet {
+            flex-wrap: wrap;
+        }
+
         .dad {
             width: 18%;
             height: 400px;
             background: linear-gradient(rgba(255, 158, 68, .5), @accent, @accent, rgba(255, 158, 68, .5));
             .flex(wrap, center);
+
+            @media @tablet {
+                width: 35%;
+                margin: 10px;
+            }
+
+            @media @mobile {
+                width: 75%;
+            }
             
 
             h2 {
@@ -53,16 +65,29 @@
 
                 p {
                     padding: 20px;
+
+                    @media @tablet {
+                        font-size: 1.4rem;
+                        padding: 10px;
+                    }
                 }
             }
 
             &:hover {
                 width: 35%;
                 background: lighten(@accent, 5%);
+                height: auto;
+
+                @media @tablet {
+                    width: 50%;
+                }
+
+                @media @mobile {
+                    width: 100%;
+                }
 
                 .hover-reveal {
                     display: block;
-                    transition: 1s;
                 }
             }
         }
@@ -74,7 +99,6 @@
 
         .signup-half {
             margin: 25px;
-            text-shadow: 2px 2px 5px black;
 
             p {
                 font-size: 3rem;
@@ -87,7 +111,6 @@
                 border: none;
                 width: 50px;
                 font-size: 2rem;
-                box-shadow: -3px 3px rgba(0, 0, 0, .5);
 
                 &:hover {
                     background: lighten(@accent, 5%);
@@ -95,9 +118,6 @@
 
                 &:active {
                     background: @accent;
-                    color: @accent;
-                    transform: translate(-2px, 2px);
-                    box-shadow: -1px 1px rgba(0, 0, 0, .8);
                 }
             }
         }
