@@ -5,6 +5,19 @@
         align-items: flex-end;
         height: 60px;
         background: linear-gradient(rgba(85, 85, 85, 0), rgba(85, 85, 85, 1));
+        
+        @media @tablet {
+            flex-flow: wrap-reverse row-reverse;
+            height: auto;
+        }
+
+        nav {
+            @media @tablet {
+                width: 100%;
+                .flex(wrap, center);
+                text-align: center;
+            }
+        }
 
         p {
             font-size: 1.2rem;
@@ -15,6 +28,11 @@
             margin: 15px 30px;
             color: @accent;
             height: 30px;
+
+            @media @tablet {
+                width: 100%;
+                margin: 5px;
+            }
 
             &:hover {
                 color: @primary;
