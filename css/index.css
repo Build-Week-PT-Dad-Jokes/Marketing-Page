@@ -258,21 +258,6 @@ button {
   height: 60px;
   background: linear-gradient(rgba(85, 85, 85, 0), #555555);
 }
-@media (max-width: 800px) {
-  .landing footer {
-    flex-flow: wrap-reverse row-reverse;
-    height: auto;
-  }
-}
-@media (max-width: 800px) {
-  .landing footer nav {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
-  }
-}
 .landing footer p {
   font-size: 1.2rem;
   margin: 15px 30px;
@@ -282,16 +267,55 @@ button {
   color: #ff9e44;
   height: 30px;
 }
-@media (max-width: 800px) {
-  .landing footer a {
-    width: 100%;
-    margin: 5px;
-  }
-}
 .landing footer a:hover {
   color: #ff3939;
 }
 .landing footer a:active {
+  color: white;
+}
+footer {
+  width: 100%;
+  display: flex;
+  flex-wrap: no-wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 60px;
+  background: linear-gradient(rgba(85, 85, 85, 0), #555555);
+}
+@media (max-width: 800px) {
+  footer {
+    flex-flow: wrap-reverse row-reverse;
+    height: auto;
+  }
+}
+@media (max-width: 800px) {
+  footer nav {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+}
+footer p {
+  font-size: 1.2rem;
+  margin: 15px 30px;
+}
+footer a {
+  margin: 15px 30px;
+  color: #ff9e44;
+  height: 30px;
+}
+@media (max-width: 800px) {
+  footer a {
+    width: 100%;
+    margin: 5px;
+  }
+}
+footer a:hover {
+  color: #ff3939;
+}
+footer a:active {
   color: white;
 }
 .landing {
@@ -472,20 +496,6 @@ img {
 }
 h1 {
   font-size: 2.5rem;
-}
-.button {
-  display: flex;
-  margin-top: 3%;
-  padding: 10px 10px;
-  border-radius: 4px;
-  background-color: #ff3939;
-  border: none;
-  text-decoration: none;
-  color: #ff9e44;
-  font-size: 20px;
-}
-.button a {
-  text-align: center;
 }
 .contact-container {
   display: flex;
