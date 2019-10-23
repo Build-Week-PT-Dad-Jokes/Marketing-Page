@@ -156,7 +156,7 @@ h3,
 p,
 a,
 button {
-  font-family: 'Roboto', monospace;
+  font-family: 'Roboto', sans-serif;
 }
 .landing {
   display: flex;
@@ -167,36 +167,84 @@ button {
 }
 .landing header {
   width: 100%;
-  margin: 0 auto;
+  max-width: 1000px;
   display: flex;
   flex-wrap: no-wrap;
   justify-content: space-around;
   align-items: center;
-  height: 80px;
+  height: 100px;
   background: linear-gradient(#ff3939, rgba(255, 57, 57, 0.9), rgba(255, 57, 57, 0));
   position: fixed;
   z-index: 9999;
 }
+@media (max-width: 800px) {
+  .landing header {
+    height: auto;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 600px) {
+  .landing header {
+    position: relative;
+  }
+}
 .landing header img {
   width: 100px;
   height: 75px;
+  margin: 2%;
 }
 .landing header h1 {
   color: #ff9e44;
   font-size: 5rem;
 }
+@media (max-width: 800px) {
+  .landing header h1 {
+    font-size: 3rem;
+  }
+}
 .landing header nav {
-  width: 40%;
+  width: 45%;
   display: flex;
   flex-wrap: no-wrap;
   justify-content: space-evenly;
 }
+@media (max-width: 800px) {
+  .landing header nav {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 600px) {
+  .landing header nav {
+    width: 100%;
+  }
+}
 .landing header nav a {
   color: #555;
   font-size: 1.8rem;
+  text-align: center;
+}
+@media (max-width: 800px) {
+  .landing header nav a {
+    width: 45%;
+  }
+}
+@media (max-width: 600px) {
+  .landing header nav a {
+    width: 48%;
+    color: #ff9e44;
+    font-size: 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 2px;
+  }
 }
 .landing header nav a:hover {
   color: #ff9e44;
+}
+@media (max-width: 600px) {
+  .landing header nav a:hover {
+    color: #555;
+    background: rgba(255, 255, 255, 0.3);
+  }
 }
 .landing header nav a:active {
   color: #ff3939;
@@ -210,6 +258,21 @@ button {
   height: 60px;
   background: linear-gradient(rgba(85, 85, 85, 0), #555555);
 }
+@media (max-width: 800px) {
+  .landing footer {
+    flex-flow: wrap-reverse row-reverse;
+    height: auto;
+  }
+}
+@media (max-width: 800px) {
+  .landing footer nav {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+}
 .landing footer p {
   font-size: 1.2rem;
   margin: 15px 30px;
@@ -219,6 +282,12 @@ button {
   color: #ff9e44;
   height: 30px;
 }
+@media (max-width: 800px) {
+  .landing footer a {
+    width: 100%;
+    margin: 5px;
+  }
+}
 .landing footer a:hover {
   color: #ff3939;
 }
@@ -227,19 +296,20 @@ button {
 }
 .landing {
   background-image: radial-gradient(circle, rgba(114, 22, 22, 0), rgba(114, 22, 22, 0.7), #721616);
+  max-width: 1000px;
 }
 .landing .bg-img {
   position: fixed;
   opacity: 0.5;
   z-index: -9999;
   margin-bottom: 100px;
+  max-width: 1000px;
 }
 .landing .top {
   width: 90%;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  height: 200px;
   margin-top: 80px;
 }
 .landing .top #question {
@@ -259,23 +329,43 @@ button {
   margin: 50px;
   width: 100%;
   text-align: center;
-  text-shadow: 5px 5px 10px black;
   border-bottom: 1px solid rgba(0, 0, 0, 0.5);
   border-top: 1px solid rgba(0, 0, 0, 0.5);
+  background: rgba(255, 255, 255, 0.2);
 }
 .landing .top #carousel p {
   font-size: 4rem;
 }
+@media (max-width: 800px) {
+  .landing .top #carousel p {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 500px) {
+  .landing .top #carousel p {
+    font-size: 2.5rem;
+  }
+}
 .landing .top #carousel p #up {
   color: #ff9e44;
   font-size: 4.5rem;
+}
+@media (max-width: 800px) {
+  .landing .top #carousel p #up {
+    font-size: 3.5rem;
+  }
+}
+@media (max-width: 800px) {
+  .landing .top #carousel p #up {
+    font-size: 3rem;
+  }
 }
 .landing .mid {
   width: 90%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  text-shadow: 2px 2px 5px black;
+  margin-top: 50px;
 }
 .landing .mid p {
   text-align: center;
@@ -307,7 +397,6 @@ button {
   color: white;
   border: none;
   border-radius: 10px;
-  box-shadow: -4px 4px rgba(0, 0, 0, 0.5);
 }
 .landing .mid button span {
   position: relative;
@@ -323,10 +412,6 @@ button {
 }
 .landing .mid button:hover span:after {
   opacity: 1;
-}
-.landing .mid button:active {
-  transform: translate(-2px, 2px);
-  box-shadow: -2px 2px rgba(0, 0, 0, 0.8);
 }
 .landing .mid .already {
   width: 100%;
@@ -489,7 +574,6 @@ input[type=submit]:hover {
   margin-top: 100px;
   text-align: center;
   width: 80%;
-  text-shadow: 2px 2px 5px black;
 }
 .testimonials .opening p {
   line-height: 2;
@@ -510,6 +594,11 @@ input[type=submit]:hover {
   flex-wrap: nowrap;
   justify-content: space-around;
 }
+@media (max-width: 800px) {
+  .testimonials #dad-container {
+    flex-wrap: wrap;
+  }
+}
 .testimonials #dad-container .dad {
   width: 18%;
   height: 400px;
@@ -517,6 +606,17 @@ input[type=submit]:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+@media (max-width: 800px) {
+  .testimonials #dad-container .dad {
+    width: 35%;
+    margin: 10px;
+  }
+}
+@media (max-width: 500px) {
+  .testimonials #dad-container .dad {
+    width: 75%;
+  }
 }
 .testimonials #dad-container .dad h2 {
   color: primary;
@@ -534,13 +634,29 @@ input[type=submit]:hover {
 .testimonials #dad-container .dad .hover-reveal p {
   padding: 20px;
 }
+@media (max-width: 800px) {
+  .testimonials #dad-container .dad .hover-reveal p {
+    font-size: 1.4rem;
+    padding: 10px;
+  }
+}
 .testimonials #dad-container .dad:hover {
   width: 35%;
   background: #ffab5e;
+  height: auto;
+}
+@media (max-width: 800px) {
+  .testimonials #dad-container .dad:hover {
+    width: 50%;
+  }
+}
+@media (max-width: 500px) {
+  .testimonials #dad-container .dad:hover {
+    width: 100%;
+  }
 }
 .testimonials #dad-container .dad:hover .hover-reveal {
   display: block;
-  transition: 1s;
 }
 .testimonials .signup {
   display: flex;
@@ -550,7 +666,6 @@ input[type=submit]:hover {
 }
 .testimonials .signup .signup-half {
   margin: 25px;
-  text-shadow: 2px 2px 5px black;
 }
 .testimonials .signup .signup-half p {
   font-size: 3rem;
@@ -562,14 +677,10 @@ input[type=submit]:hover {
   border: none;
   width: 50px;
   font-size: 2rem;
-  box-shadow: -3px 3px rgba(0, 0, 0, 0.5);
 }
 .testimonials .signup .signup-half button:hover {
   background: #ffab5e;
 }
 .testimonials .signup .signup-half button:active {
   background: #ff9e44;
-  color: #ff9e44;
-  transform: translate(-2px, 2px);
-  box-shadow: -1px 1px rgba(0, 0, 0, 0.8);
 }
