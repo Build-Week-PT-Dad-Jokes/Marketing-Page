@@ -247,12 +247,28 @@ button {
 }
 .landing footer {
   width: 100%;
+  max-width: 1000px;
   display: flex;
   flex-wrap: no-wrap;
   justify-content: space-between;
   align-items: flex-end;
   height: 60px;
   background: linear-gradient(rgba(85, 85, 85, 0), #555555);
+}
+@media (max-width: 800px) {
+  .landing footer {
+    flex-flow: wrap-reverse row-reverse;
+    height: auto;
+  }
+}
+@media (max-width: 800px) {
+  .landing footer nav {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
 }
 .landing footer p {
   font-size: 1.2rem;
@@ -263,57 +279,16 @@ button {
   color: #ff9e44;
   height: 30px;
 }
-.landing footer a:hover {
-  color: #ff3939;
-}
-.landing footer a:active {
-  color: white;
-}
-footer {
-  width: 100%;
-  display: flex;
-  flex-wrap: no-wrap;
-  justify-content: space-between;
-  align-items: flex-end;
-  height: 60px;
-  background: linear-gradient(rgba(85, 85, 85, 0), #555555);
-}
 @media (max-width: 800px) {
-  footer {
-    flex-flow: wrap-reverse row-reverse;
-    height: auto;
-  }
-}
-@media (max-width: 800px) {
-  footer nav {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
-  }
-}
-footer p {
-  font-size: 1.2rem;
-  margin: 15px 30px;
-}
-footer a {
-  margin: 15px 30px;
-  color: #ff9e44;
-  height: 30px;
-}
-@media (max-width: 800px) {
-  footer a {
+  .landing footer a {
     width: 100%;
     margin: 5px;
   }
 }
-
 .landing footer a:hover {
   color: maroon;
-
 }
-footer a:active {
+.landing footer a:active {
   color: white;
 }
 footer {
@@ -344,11 +319,13 @@ footer a:active {
   background-image: radial-gradient(circle, rgba(114, 22, 22, 0), rgba(114, 22, 22, 0.7), #721616);
   max-width: 1000px;
 }
+.landing span {
+  margin: 0;
+}
 .landing .bg-img {
   position: fixed;
   opacity: 0.5;
   z-index: -9999;
-  margin-bottom: 100px;
   max-width: 1000px;
 }
 .landing .top {
@@ -540,7 +517,6 @@ span img {
 h1 {
   font-size: 2.5rem;
 }
-
 @media (max-width: 800px) {
   .ui-box {
     display: flex;
@@ -613,7 +589,6 @@ h1 {
     left: 2em;
   }
 }
-
 .contact-container {
   display: flex;
   flex-flow: row wrap;
