@@ -1,6 +1,8 @@
 .landing {
     background-image: radial-gradient(circle, rgba(114, 22, 22, 0), rgba(114, 22, 22, .7), rgba(114, 22, 22, 1));
     max-width: 1000px;
+    .flex(nowrap, flex-end);
+    flex-direction: column;
     
     span {
         margin: 0;
@@ -16,7 +18,6 @@
     .top {
         width: 90%;
         .flex(wrap, flex-start);
-        margin-top: 80px;
 
         #question{
             width: 50px;
